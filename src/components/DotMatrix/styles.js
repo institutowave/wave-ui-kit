@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -8,10 +8,10 @@ export const Wrapper = styled.div`
   bottom: ${({ position }) => position.bottom};
   z-index: 10;
 
-  @media ${({ theme }) => theme.media.mobile} {
+  @media (max-width: 600px) {
     display: none;
   }
-`;
+`
 
 export const Dot = styled.div`
   width: ${({ size }) => size};
@@ -25,9 +25,9 @@ export const Dot = styled.div`
   &:hover {
     -webkit-filter: brightness(150%);
   }
-`;
+`
 
 export const Rows = styled.div`
   display: flex;
   flex-flow: row;
-`;
+`

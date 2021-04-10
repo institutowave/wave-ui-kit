@@ -1,13 +1,10 @@
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import { StyledButton } from './styles';
-import { useTheme } from 'styled-components';
+import React from 'react'
+import theme from '../'
+import { StyledButton } from './styles'
 
 export default function Button(props) {
-  const { t } = useTranslation('common');
-
-  const { color, textColor, outlined, ...rest } = props;
-  const { primaryColor, white } = useTheme();
+  const { color, textColor, outlined, ...rest } = props
+  const { primaryColor, white } = theme.color
 
   return (
     <StyledButton
@@ -16,5 +13,5 @@ export default function Button(props) {
       color={color || primaryColor}
       textColor={textColor || white}
     />
-  );
+  )
 }

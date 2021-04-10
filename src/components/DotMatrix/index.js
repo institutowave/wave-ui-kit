@@ -1,8 +1,7 @@
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import { useTheme } from 'styled-components';
-import { head, last, times } from 'lodash';
-import { Wrapper, Dot, Rows, Columns } from './styles';
+import React from 'react'
+import { head, last, times } from 'lodash'
+import { Wrapper, Dot, Rows } from './styles'
+import theme from '../../theme'
 
 export default function DotMatrix({
   matrixPosition,
@@ -10,12 +9,11 @@ export default function DotMatrix({
   spacingTop,
   spacingRight,
   dotSize,
-  dotColor,
+  dotColor
 }) {
-  const { t } = useTranslation('common');
-  const { black: defaultColor } = useTheme();
-  const defaultSize = '.75rem';
-  const defaultSpacing = '3rem';
+  const { black: defaultColor } = theme.color
+  const defaultSize = '.75rem'
+  const defaultSpacing = '3rem'
 
   return (
     <Wrapper position={matrixPosition}>
@@ -32,5 +30,5 @@ export default function DotMatrix({
         </Rows>
       ))}
     </Wrapper>
-  );
+  )
 }
