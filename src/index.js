@@ -1,1 +1,3 @@
-export * from './components'
+import { ExampleComponent } from './components/index'
+
+export default { ExampleComponent }
