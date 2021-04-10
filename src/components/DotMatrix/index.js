@@ -1,7 +1,7 @@
 import React from 'react'
 import { head, last, times } from 'lodash'
 import { Wrapper, Dot, Rows } from './styles'
-import theme from '../../theme'
+import theme from '../../styles/theme'
 
 export default function DotMatrix({
   matrixPosition,
