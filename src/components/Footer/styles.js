@@ -1,18 +1,19 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import theme from '../../styles/theme'
 
 export const Container = styled.footer`
-  background: ${({ theme }) => theme.secondaryColor};
-  color: ${({ theme }) => theme.white};
+  background: ${theme.color.secondaryColor};
+  color: ${theme.white};
   border-radius: 6.5rem 6.5rem 0 0;
   overflow: hidden;
 
   nav {
-    background: ${({ theme }) => theme.blackFooter};
+    background: ${theme.color.blackFooter};
     min-height: 8rem;
     display: flex;
     align-items: center;
     padding: 2rem;
-    
+
     ul {
       display: flex;
       align-items: center;
@@ -20,14 +21,14 @@ export const Container = styled.footer`
 
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      
+
       li {
         text-transform: uppercase;
         font-size: 1.8rem;
         text-align: center;
 
         a {
-          color: ${({ theme }) => theme.white};
+          color: ${theme.color.white};
           text-decoration: none;
         }
       }
@@ -42,7 +43,6 @@ export const Container = styled.footer`
           list-style: none;
 
           > li {
-
             & + li {
               margin-left: 2rem;
             }
@@ -51,7 +51,7 @@ export const Container = styled.footer`
               transition: 0.3s;
 
               &:hover {
-                fill: ${({ theme }) => theme.primaryColor};
+                fill: ${theme.color.primaryColor};
               }
             }
           }
@@ -84,7 +84,7 @@ export const Container = styled.footer`
       }
     }
   }
-`;
+`
 
 export const Content = styled.div`
   padding: 5rem;
@@ -114,7 +114,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #FFFFFF66;
+    border-top: 1px solid #ffffff66;
     padding-top: 5rem;
 
     img {
@@ -124,14 +124,14 @@ export const Content = styled.div`
 
     .contact {
       font-size: 2rem;
-      
+
       h4 {
         text-transform: uppercase;
       }
 
       ul {
         list-style: none;
-        
+
         li {
           margin-top: 0.9rem;
 
@@ -147,7 +147,7 @@ export const Content = styled.div`
             }
           }
 
-          &:first-child {            
+          &:first-child {
             a svg {
               transform: rotateZ(90deg);
             }
@@ -191,8 +191,8 @@ export const Content = styled.div`
       }
 
       button {
-        background: ${({ theme }) => theme.primaryColor};
-        color: ${({ theme }) => theme.white};
+        background: ${theme.color.primaryColor};
+        color: ${theme.color.white};
         font-size: 1.6rem;
         border-radius: 2.8rem;
         width: 100%;
@@ -200,13 +200,13 @@ export const Content = styled.div`
         padding: 1.2rem 0.5rem;
         text-transform: uppercase;
         font-weight: bold;
-        border: 2px solid ${({ theme }) => theme.primaryColor};
+        border: 2px solid ${theme.color.primaryColor};
         cursor: pointer;
         transition: 0.3s;
 
         &:hover {
           background: transparent;
-          color: ${({ theme }) => theme.primaryColor};
+          color: ${theme.color.primaryColor};
         }
       }
     }
@@ -242,7 +242,7 @@ export const Content = styled.div`
       }
 
       ul.address {
-        border-bottom: 1px solid #FFFFFF66;
+        border-bottom: 1px solid #ffffff66;
         padding-bottom: 2rem;
         width: 100%;
       }
@@ -256,4 +256,4 @@ export const Content = styled.div`
       }
     }
   }
-`;
+`

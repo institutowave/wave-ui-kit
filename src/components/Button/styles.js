@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
+import theme from '../../styles/theme'
 
 export const StyledButton = styled.button`
   background: ${({ color }) => color};
@@ -6,7 +7,7 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   padding: 10px 30px;
   color: ${({ textColor }) => textColor};
-  font-family: ${({ theme }) => theme.fontBold};
+  font-family: ${theme.color.fontBold};
   font-size: 1.2rem;
   text-transform: uppercase;
   transition: 0.3s;
@@ -46,7 +47,7 @@ export const StyledButton = styled.button`
       outlined &&
       css`
         background: white;
-        color: ${theme.secondaryColor};
+        color: ${theme.color.secondaryColor};
       `}
   }
 
@@ -54,4 +55,4 @@ export const StyledButton = styled.button`
     opacity: 0.8;
     outline: none;
   }
-`;
+`
