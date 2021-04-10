@@ -4,7 +4,7 @@ import {
   FaWhatsapp,
   FaLinkedinIn,
   FaTwitter,
-  FaPhone
+  FaPhone,
 } from 'react-icons/fa'
 import { MdHome, MdMail } from 'react-icons/md'
 import { Container, Content } from './styles'
@@ -13,41 +13,6 @@ export default function Footer() {
   return (
     <Container>
       <Content>
-        <ul className='footer-texts'>
-          <li>
-            <h4>Lorem Ipsum</h4>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </p>
-          </li>
-
-          <li>
-            <h4>Lorem Ipsum</h4>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam.
-            </p>
-          </li>
-
-          <li>
-            <h4>Lorem Ipsum</h4>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren.
-            </p>
-          </li>
-        </ul>
-
         <div className='contact-wrapper'>
           <a to='/'>
             <img src='/images/contrast-logo.png' alt='Instituto Wave' />

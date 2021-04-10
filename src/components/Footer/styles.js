@@ -4,8 +4,8 @@ import theme from '../../styles/theme'
 export const Container = styled.footer`
   background: ${theme.color.secondaryColor};
   color: ${theme.white};
-  border-radius: 6.5rem 6.5rem 0 0;
   overflow: hidden;
+  color: white;
 
   nav {
     background: ${theme.color.blackFooter};
@@ -24,12 +24,13 @@ export const Container = styled.footer`
 
       li {
         text-transform: uppercase;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
 
         a {
           color: ${theme.color.white};
           text-decoration: none;
+          font-size: 1.5rem;
         }
       }
 
@@ -114,8 +115,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #ffffff66;
-    padding-top: 5rem;
+    padding-top: 0 5rem 5rem;
 
     img {
       height: 100%;
@@ -188,6 +188,7 @@ export const Content = styled.div`
       h4 {
         font-size: 2rem;
         text-transform: uppercase;
+        text-align: center;
       }
 
       button {
@@ -196,7 +197,6 @@ export const Content = styled.div`
         font-size: 1.6rem;
         border-radius: 2.8rem;
         width: 100%;
-        margin-top: 1.5rem;
         padding: 1.2rem 0.5rem;
         text-transform: uppercase;
         font-weight: bold;
