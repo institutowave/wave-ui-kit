@@ -44,6 +44,11 @@ export const Container = styled.footer`
           display: flex;
           list-style: none;
 
+          @media (max-width: 500px) {
+            margin-left: 0;
+            padding: 0;
+          }
+
           > li {
             & + li {
               margin-left: 2rem;

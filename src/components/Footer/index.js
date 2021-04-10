@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaPhone,
 } from 'react-icons/fa'
-import { MdHome, MdMail } from 'react-icons/md'
+import { MdMail } from 'react-icons/md'
 import { Container, Content } from './styles'
 
 export default function Footer() {
@@ -37,9 +37,7 @@ export default function Footer() {
           </div>
 
           <ul className='address'>
-            <li>
-              Av. Paulo Roberto Cunha Santos, 505 <MdHome />
-            </li>
+            <li>Av. Paulo Roberto Cunha Santos, 505</li>
 
             <li>Marta Helena - Uberlândia MG</li>
 
