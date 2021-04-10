@@ -1,8 +1,6 @@
-import ReactModal from 'react-modal';
-import styled from 'styled-components';
-import theme from 'styles/theme';
-import { AiOutlineClose } from 'react-icons/ai';
-import { StyledModal, Wrapper, CloseIcon } from './styles';
+import React from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
+import { StyledModal, Wrapper, CloseIcon } from './styles'
 
 export default function WaveModal({ modalIsOpen, onClose, children }) {
   return (
@@ -16,5 +14,5 @@ export default function WaveModal({ modalIsOpen, onClose, children }) {
       </CloseIcon>
       <Wrapper>{children}</Wrapper>
     </StyledModal>
-  );
+  )
 }

@@ -1,6 +1,7 @@
-import { Wrapper, LeftTriangle, RightTriangle, Rows } from './styles';
-import { times } from 'lodash';
-import { useTheme } from 'styled-components';
+import React from 'react'
+import { Wrapper, LeftTriangle, RightTriangle, Rows } from './styles'
+import { times } from 'lodash'
+import theme from '../../styles/theme'
 
 export default function Triangles({
   position,
@@ -8,12 +9,11 @@ export default function Triangles({
   direction,
   color,
   size,
-  spacing,
+  spacing
 }) {
-  const Triangle = direction === 'left' ? LeftTriangle : RightTriangle;
-  const defaultSpacing = 10;
-  const defaultSize = [20, 25];
-  const { secondaryColor } = useTheme();
+  const Triangle = direction === 'left' ? LeftTriangle : RightTriangle
+  const defaultSpacing = 10
+  const defaultSize = [20, 25]
 
   return (
     <Wrapper position={position}>
@@ -21,11 +21,11 @@ export default function Triangles({
         {times(quantity, () => (
           <Triangle
             size={size || defaultSize}
-            color={color || secondaryColor}
+            color={color || theme.color.secondaryColor}
             spacing={spacing || defaultSpacing}
           />
         ))}
       </Rows>
     </Wrapper>
-  );
+  )
 }

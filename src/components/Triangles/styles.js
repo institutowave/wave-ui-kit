@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { head, tail } from 'lodash';
+import styled from 'styled-components'
+import { head, tail } from 'lodash'
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   @media ${({ theme }) => theme.media.mobile} {
     display: none;
   }
-`;
+`
 
 export const RightTriangle = styled.div`
   width: 0;
@@ -23,9 +23,9 @@ export const RightTriangle = styled.div`
   margin-right: ${({ spacing }) => spacing}px;
 
   &:hover {
-    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
   }
-`;
+`
 
 export const LeftTriangle = styled.div`
   width: 0;
@@ -36,12 +36,11 @@ export const LeftTriangle = styled.div`
   margin-right: ${({ spacing }) => spacing}px;
 
   &:hover {
-    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
   }
-`;
+`
 
 export const Rows = styled.div`
   display: flex;
   flex-flow: row;
-`;
-
+`
