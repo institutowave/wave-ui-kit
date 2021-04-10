@@ -1,9 +1,9 @@
 import React from 'react'
 import {
   FaFacebookF,
-  FaWhatsapp,
-  FaLinkedinIn,
-  FaTwitter,
+  // FaWhatsapp,
+  FaYoutube,
+  FaInstagram,
   FaPhone,
 } from 'react-icons/fa'
 import { MdHome, MdMail } from 'react-icons/md'
@@ -82,28 +82,36 @@ export default function Footer() {
             Nossas redes sociais
             <ol>
               <li>
-                <a href='1' target='_blank'>
+                <a href='javascript:void(0)' target='_blank' rel='noreferrer'>
                   <FaFacebookF />
                 </a>
               </li>
 
               <li>
-                <a href='1' target='_blank'>
-                  <FaTwitter />
+                <a
+                  href='https://www.youtube.com/channel/UCIt4gUYXmFMsj6mGUJ1Bi2A'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaYoutube />
                 </a>
               </li>
 
               <li>
-                <a href='1' target='_blank'>
-                  <FaLinkedinIn />
+                <a
+                  href='https://www.instagram.com/institutowave/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaInstagram />
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href='1' target='_blank'>
                   <FaWhatsapp />
                 </a>
-              </li>
+              </li> */}
             </ol>
           </li>
         </ul>

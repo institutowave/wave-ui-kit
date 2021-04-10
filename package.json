@@ -4,7 +4,7 @@
   "description": "A ui kit for wave institute.",
   "author": "institutowave",
   "license": "MIT",
-  "repository": "institutowave/wave-ui-kit",
+  "repository": "npminstitutowave/wave-ui-kit",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
