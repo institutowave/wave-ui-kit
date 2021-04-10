@@ -1,16 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { head, last, times } from 'lodash'
 import { Wrapper, Dot, Rows } from './styles'
 import theme from '../../styles/theme'
 
-export default function DotMatrix({
+const DotMatrix = ({
   matrixPosition,
   matrix,
   spacingTop,
   spacingRight,
   dotSize,
-  dotColor
-}) {
+  dotColor,
+}) => {
   const { black: defaultColor } = theme.color
   const defaultSize = '.75rem'
   const defaultSpacing = '3rem'
@@ -32,3 +34,14 @@ export default function DotMatrix({
     </Wrapper>
   )
 }
+
+DotMatrix.propTypes = {
+  matrixPosition: PropTypes.any,
+  matrix: PropTypes.any,
+  spacingTop: PropTypes.any,
+  spacingRight: PropTypes.any,
+  dotSize: PropTypes.any,
+  dotColor: PropTypes.any,
+}
+
+export default DotMatrix
