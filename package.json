@@ -51,6 +51,9 @@
     "dist"
   ],
   "dependencies": {
-    "styled-components": "^5.2.3"
+    "lodash": "^4.17.21",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.2.3",
+    "styled-react-modal": "^2.1.0"
   }
 }
