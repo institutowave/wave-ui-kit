@@ -1,5 +1,5 @@
 import React from 'react'
-import theme from '../'
+import theme from '../../styles/theme'
 import { StyledButton } from './styles'
 
 export default function Button(props) {
