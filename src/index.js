@@ -1,5 +1,3 @@
-export { default as Button } from './components/Button'
-export { default as DotMatrix } from './components/DotMatrix'
-export { default as Modal } from './components/Modal'
-export { default as Triangles } from './components/Triangles'
-export { default as Footer } from './components/Footer'
+import Button from './components/Button'
+
+export default Button
