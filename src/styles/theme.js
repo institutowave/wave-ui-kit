@@ -4,11 +4,11 @@ export default {
     secondaryColor: '#36485B',
     white: '#FFF',
     black: '#000',
-    blackFooter: '#1B242D'
+    blackFooter: '#1B242D',
   },
   font: {
     fontRegular: 'Segoe UI Regular',
     fontBold: 'Segoe UI Bold',
-    fontItalic: 'Segoe UI Bold Italic'
-  }
+    fontItalic: 'Segoe UI Bold Italic',
+  },
 }

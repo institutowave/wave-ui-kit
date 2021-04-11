@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   padding: 10px 30px;
   color: ${({ textColor }) => textColor};
-  font-family: ${theme.color.fontBold};
+  font-family: ${theme.font.fontBold};
   font-size: 1.2rem;
   text-transform: uppercase;
   transition: 0.3s;
