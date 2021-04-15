@@ -6,6 +6,8 @@ export const Container = styled.footer`
   color: ${theme.white};
   overflow: hidden;
   color: white;
+  z-index: 9;
+  position: relative;
 
   nav {
     background: ${theme.color.blackFooter};
