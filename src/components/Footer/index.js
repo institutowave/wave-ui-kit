@@ -29,8 +29,8 @@ export default function Footer() {
               </li>
 
               <li>
-                <a href='mailto:contato@institutowave.org'>
-                  contato@institutowave.org <MdMail />
+                <a href='mailto:institutowave@gmail.com'>
+                  institutowave@gmail.com <MdMail />
                 </a>
               </li>
             </ul>
