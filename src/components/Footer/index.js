@@ -56,7 +56,7 @@ export default function Footer({ onAssociateClick }) {
         <ul>
           <li>
             <a
-              to='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/politica-privacidade.pdf'
+              href='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/politica-privacidade.pdf'
               target='_blank'
               rel='noreferrer'
             >
@@ -66,7 +66,7 @@ export default function Footer({ onAssociateClick }) {
 
           <li>
             <a
-              to='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/codigo-conduta.pdf'
+              href='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/codigo-conduta.pdf'
               target='_blank'
               rel='noreferrer'
             >
