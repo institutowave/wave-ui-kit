@@ -211,6 +211,7 @@ export const Content = styled.div`
         border: 2px solid ${theme.color.primaryColor};
         cursor: pointer;
         transition: 0.3s;
+        outline: none;
 
         &:hover {
           background: transparent;

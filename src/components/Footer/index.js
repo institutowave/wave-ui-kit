@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  FaFacebookF,
+  // FaFacebookF,
   // FaWhatsapp,
   FaYoutube,
   FaInstagram,
@@ -9,12 +9,12 @@ import {
 import { MdMail } from 'react-icons/md'
 import { Container, Content } from './styles'
 
-export default function Footer() {
+export default function Footer({ onAssociateClick }) {
   return (
     <Container>
       <Content>
         <div className='contact-wrapper'>
-          <a to='/'>
+          <a href='https://institutowave.org'>
             <img src='/images/contrast-logo.png' alt='Instituto Wave' />
           </a>
 
@@ -47,7 +47,7 @@ export default function Footer() {
           <div className='follow-that-wave'>
             <h4>Siga essa onda</h4>
 
-            <button>Associe-se</button>
+            <button onClick={() => onAssociateClick()}>Associe-se</button>
           </div>
         </div>
       </Content>
@@ -55,15 +55,23 @@ export default function Footer() {
       <nav>
         <ul>
           <li>
-            <a to='1'>Políticas de privacidade</a>
+            <a
+              to='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/politica-privacidade.pdf'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Políticas de privacidade
+            </a>
           </li>
 
           <li>
-            <a to='1'>Termos de uso</a>
-          </li>
-
-          <li>
-            <a to='1'>Código de conduta</a>
+            <a
+              to='https://wave-file-bucket.s3-sa-east-1.amazonaws.com/codigo-conduta.pdf'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Código de conduta
+            </a>
           </li>
 
           <li>
@@ -79,11 +87,11 @@ export default function Footer() {
           <li>
             Nossas redes sociais
             <ol>
-              <li>
-                <a href='javascript:void(0)' target='_blank' rel='noreferrer'>
+              {/* <li>
+                <a href='' target='_blank' rel='noreferrer'>
                   <FaFacebookF />
                 </a>
-              </li>
+              </li> */}
 
               <li>
                 <a
@@ -106,7 +114,7 @@ export default function Footer() {
               </li>
 
               {/* <li>
-                <a href='1' target='_blank'>
+                <a href='' target='_blank'>
                   <FaWhatsapp />
                 </a>
               </li> */}
