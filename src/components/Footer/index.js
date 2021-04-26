@@ -9,7 +9,7 @@ import {
 import { MdMail } from 'react-icons/md'
 import { Container, Content } from './styles'
 
-export default function Footer({ onAssociateClick }) {
+export default function Footer({ onAssociateClick, hidenAssociateForm }) {
   return (
     <Container>
       <Content>
@@ -44,11 +44,13 @@ export default function Footer({ onAssociateClick }) {
             <li>CEP: 38402-234</li>
           </ul>
 
-          <div className='follow-that-wave'>
-            <h4>Siga essa onda</h4>
+          {!hidenAssociateForm && (
+            <div className='follow-that-wave'>
+              <h4>Siga essa onda</h4>
 
-            <button onClick={() => onAssociateClick()}>Associe-se</button>
-          </div>
+              <button onClick={() => onAssociateClick()}>Associe-se</button>
+            </div>
+          )}
         </div>
       </Content>
 
